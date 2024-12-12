@@ -1,26 +1,37 @@
-%% start of file `template.tex'.
-%% Copyright 2006-2015 Xavier Danaux (xdanaux@gmail.com), 2020-2024 moderncv maintainers (github.com/moderncv).
-%
-% This work may be distributed and/or modified under the
-% conditions of the LaTeX Project Public License version 1.3c,
-% available at http://www.latex-project.org/lppl/.
+% possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+\documentclass[10pt,letterpaper,sans]{moderncv}
 
-
-\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
-
-\moderncvcolor{cerulean}                           % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'; for contemporary style use 'cerulean'
+% color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'; for contemporary style use 'cerulean'
 % moderncv themes
-\moderncvstyle[]{contemporary}                     % style options are 'casual' (default), 'classic', 'banking', 'oldstyle', 'fancy' and 'contemporary'
-                                                   % the 'contemporary' style optionally takes the `qr` (default) or `noqr` options
-%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
-%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+\moderncvcolor{cerulean}
+
+% style options are 'casual' (default), 'classic', 'banking', 'oldstyle', 'fancy' and 'contemporary'
+% the 'contemporary' style optionally takes the `qr` (default) or `noqr` options
+\moderncvstyle[]{fancy}                     
+
+% to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\renewcommand{\familydefault}{\sfdefault}
+
+% uncomment to suppress automatic page numbering for CVs longer than one page
+%\nopagenumbers{}
 
 % adjust the page margins
-\usepackage[hmargin=0.5in,vmargin=10pt]{geometry}                  % the 'contemporary' style looks better with reduced margins; uncomment the line below for increased margin
+%\usepackage[hmargin=0.5in,vmargin=10pt]{geometry}
+\usepackage[hmargin=0.5in,vmargin=0.5in]{geometry}
+% the 'contemporary' style looks better with reduced margins; uncomment the line above for increased margin
 %\usepackage[scale=0.75]{geometry}
-%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
-%\setlength{\makecvheadnamewidth}{10cm}            % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
-%\setlength{\listitemsymbolspace}{10pt}            % set custom spacing between list symbol and text item (influences \cvlistitem and \cvlistdoubleitem)
+
+% depending on the amount of information in the footer, you need to change this value. comment this line out and set it to the size given in the warning
+\setlength{\footskip}{12pt}
+
+% if you want to change the width of the column with the dates
+\setlength{\hintscolumnwidth}{3.5cm}
+
+% for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+%\setlength{\makecvheadnamewidth}{10cm}
+
+% set custom spacing between list symbol and text item (influences \cvlistitem and \cvlistdoubleitem)
+%\setlength{\listitemsymbolspace}{10pt}
 
 % the 'contemporary' style allows to append additional elements to the head background; uncomment and customize if needed
 %\def\@moderncvheadBackground{
@@ -49,24 +60,35 @@
   \usepackage{lmodern}
 \fi
 
+%TODO: Hadi
+\usepackage[default]{FiraSans}
+\usepackage[default]{droidsans}
+%TODO: idaH
+
 % document language
-\usepackage[english]{babel}  % FIXME: using spanish breaks moderncv
+\usepackage[english]{babel}
 
 % personal data
-\name{John}{Doe}
-\title{Résumé title}                               % optional, remove / comment the line if not wanted
-\born{4 July 1776}                                 % optional, remove / comment the line if not wanted
-\address{street and number}{postcode city}{country}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
-\phone[mobile]{+1~(234)~567~890}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
-\phone[fixed]{+2~(345)~678~901}
-\phone[fax]{+3~(456)~789~012}
-\email{john@doe.org}                               % optional, remove / comment the line if not wanted
-\homepage{www.johndoe.com}                         % optional, remove / comment the line if not wanted
+\name{Hadi}{Esmaeilzadeh}
 
-% Social icons
-\social[linkedin]{john.doe}                        % optional, remove / comment the line if not wanted
-\social[xing]{john\_doe}                           % optional, remove / comment the line if not wanted
+\title{Professor and Halicioğlu Chair in Computer Architecture}                          
+\born{21 September 1980}
 
+\address{5840 Cozzens St}{San Diego, CA 92122}{}
+
+% \phone[mobile]{+1~(858)~717~4639}
+% \phone[fixed]{+1~(858)~717~4639}
+% \phone[fax]{+1~(858)~717~4639}
+\email{hadi@ucsd.edu}
+\homepage{https://cseweb.uc-sd.edu/~hadi/}
+%\homepage{https://cseweb.ucsd.edu/~hadi/}
+
+\social[googlescholar]{LnB5_AcAAAAJ}
+\social[orcid]{0000-0000-000-000}
+\social[linkedin]{hadi-esmaeilzadeh-2b138a19}
+
+
+\social[xing]{john\_doe}
 \social[github]{jdoe}                              % optional, remove / comment the line if not wanted
 \social[gitlab]{jdoe}                              % optional, remove / comment the line if not wanted
 \social[codeberg]{jdoe}                            % optional, remove / comment the line if not wanted
@@ -74,10 +96,8 @@
 \social[stackoverflow]{0000000/johndoe}            % optional, remove / comment the line if not wanted
 
 \social[skype]{jdoe}                               % optional, remove / comment the line if not wanted
-\social[orcid]{0000-0000-000-000}                  % optional, remove / comment the line if not wanted
 \social[researchgate]{jdoe}                        % optional, remove / comment the line if not wanted
 \social[researcherid]{jdoe}                        % optional, remove / comment the line if not wanted
-\social[googlescholar]{googlescholarid}            % optional, remove / comment the line if not wanted
 
 \social[twitter]{ji\_doe}                          % optional, remove / comment the line if not wanted
 \social[mastodon]{mastodon.social/web/@user}       % optional, remove / comment the line if not wanted
