@@ -12,7 +12,9 @@
 
 # template.tex output
 # move to *.pdf once manual is done
-template.pdf
+hadicv.pdf
 
 # release tarballs
 moderncv-*.tar.gz
+
+.DS_Store
