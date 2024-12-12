@@ -100,7 +100,7 @@
 % hyper links (hyperref is loaded at the end of the preamble to pass options required by loaded packages such as CJK)
 \newcommand*\pdfpagemode{UseNone}% do not show thumbnails or bookmarks on opening (on supporting browsers); set \pdfpagemode to "UseOutlines" to show bookmarks
 \RequirePackage{url}
-\urlstyle{tt}
+\urlstyle{sf}
 \AtEndPreamble{
   \pagenumbering{arabic}% has to be issued before loading hyperref, as to set \thepage and hence to avoid hyperref issuing a warning and setting pdfpagelabels=false
   \PassOptionsToPackage{unicode}{hyperref}
