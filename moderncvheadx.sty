@@ -23,10 +23,10 @@
 %                overall head definition
 %-------------------------------------------------------------------------------
 % fonts
-\renewcommand*{\namefont}{\fontsize{34}{36}\mdseries\upshape}
-\renewcommand*{\titlefont}{\LARGE\mdseries\slshape}
+\renewcommand*{\namefont}{\fontsize{22}{24}\mdseries\upshape}
+\renewcommand*{\titlefont}{\large\mdseries\slshape}
 \renewcommand*{\addressfont}{\small\mdseries\slshape}
-\renewcommand*{\quotefont}{\large\slshape}
+\renewcommand*{\quotefont}{\small}
 
 % styles
 \renewcommand*{\namestyle}[1]{{\namefont\textcolor{namecolor}{#1}}}
@@ -43,7 +43,7 @@
 % lengths
 \@initializelength{\quotewidth}
 \renewcommand*{\recomputecvheadlengths}{%
-  \setlength{\quotewidth}{0.65\textwidth}}
+  \setlength{\quotewidth}{\maincolumnwidth}}
 
 % commands
 \renewcommand*{\makecvhead}{%
