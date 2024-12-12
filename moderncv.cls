@@ -12,7 +12,6 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{moderncv}[2024-07-18 v2.4.1 modern curriculum vitae and letter document class]
 
-
 %-------------------------------------------------------------------------------
 %                class options
 %
