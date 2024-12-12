@@ -294,7 +294,7 @@
 \NewDocumentCommand{\social}{O{}O{}m}{%
   \ifthenelse{\equal{#2}{}}%
     {%
-      \ifthenelse{\equal{#1}{linkedin}}     {\collectionadd[linkedin]{socials}     {\protect\httpslink[Hadi@LinkedIn]{www.linkedin.com/in/#3}}}               {}%
+      \ifthenelse{\equal{#1}{linkedin}}     {\collectionadd[linkedin]{socials}     {\protect\httpslink[hadi@linkedin]{www.linkedin.com/in/#3}}}               {}%
       \ifthenelse{\equal{#1}{xing}}         {\collectionadd[xing]{socials}         {\protect\httpslink[#3]{www.xing.com/profile/#3}}}              {}%
       \ifthenelse{\equal{#1}{twitter}}      {\collectionadd[twitter]{socials}      {\protect\httpslink[#3]{twitter.com/#3}}}                       {}%
       \ifthenelse{\equal{#1}{mastodon}}     {\collectionadd[mastodon]{socials}     {\protect\httpslink[#3]{#3}}}                                   {}%
@@ -310,7 +310,7 @@
       \ifthenelse{\equal{#1}{whatsapp}}     {\collectionadd[whatsapp]{socials}     {\protect\httpslink[#3]{wa.me/#3}}}                             {}%
       \ifthenelse{\equal{#1}{signal}}       {\collectionadd[signal]{socials}       {#3}}                                                           {}%
       \ifthenelse{\equal{#1}{matrix}}       {\collectionadd[matrix]{socials}       {\httpslink[#3]{matrix.to/\#/#3}}}                              {}%
-      \ifthenelse{\equal{#1}{googlescholar}}{\collectionadd[googlescholar]{socials}{\protect\httpslink[Hadi@Scholar]{scholar.google.com/citations?user=#3}}} {}%
+      \ifthenelse{\equal{#1}{googlescholar}}{\collectionadd[googlescholar]{socials}{\protect\httpslink[hadi@scholar]{scholar.google.com/citations?user=#3}}} {}%
       \ifthenelse{\equal{#1}{codeberg}}     {\collectionadd[codeberg]{socials}     {\protect\httpslink[#3]{codeberg.org/#3}}}                      {}%
       \ifthenelse{\equal{#1}{discord}}      {\collectionadd[discord]{socials}      {#3}}                                                           {}%
       \ifthenelse{\equal{#1}{twitch}}       {\collectionadd[twitch]{socials}       {\protect\httpslink[#3]{twitch.tv/#3}}}                         {}%
@@ -407,13 +407,13 @@
 
 \newcommand*{\@loadmoderncvpackage}[3][]{%
   \begingroup\edef\x{\endgroup%
-    \noexpand\RequirePackage[#1]{moderncv#2\ifcase#3\or i\or ii\or iii\or iv\or v\or vi\or vii\or viii\or ix\or x\fi}%
+    \noexpand\RequirePackage[#1]{./hadi-style/moderncv#2\ifcase#3\or i\or ii\or iii\or iv\or v\or vi\or vii\or viii\or ix\or x\fi}%
   }\x}
 
 % loads a style variant (a combination of header, body and footer)
 % usage: \moderncvstyle{<style variant name>}
 \newcommand*{\moderncvstyle}[2][]{%
-  \RequirePackage[#1]{moderncvstyle#2}}
+  \RequirePackage[#1]{./hadi-style/moderncvstyle#2}}
 
 % loads a header variant
 % usage: \moderncvhead[<optional head option>]{<header variant number>}
@@ -433,7 +433,7 @@
 % loads a color scheme
 % usage: \moderncvcolor{<color scheme name>}
 \newcommand*{\moderncvcolor}[1]{%
-  \RequirePackage{moderncvcolor#1}}
+  \RequirePackage{./hadi-style/moderncvcolor#1}}
 
 % loads an icons set
 % usage: \moderncvicons{<icon set name>}

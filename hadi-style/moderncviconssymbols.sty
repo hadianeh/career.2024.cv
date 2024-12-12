@@ -14,19 +14,19 @@
 
 
 \ifxetexorluatex
-  \RequirePackage{moderncviconsawesome}
-  \RequirePackage{moderncviconsacademic}
+  \RequirePackage{./hadi-style/moderncviconsawesome}
+  \RequirePackage{./hadi-style/moderncviconsacademic}
 \else
   \typeout{^^Jmoderncv: academicons requires XeTeX/LuaTeX to work. Using alternatives.^^J}
   \ifpdftex
-    \RequirePackage{moderncviconsawesome}
+    \RequirePackage{./hadi-style/moderncviconsawesome}
   \else
-    \RequirePackage{moderncviconsmarvosym}
+    \RequirePackage{./hadi-style/moderncviconsmarvosym}
   \fi
 \fi
 
 % Define symbols that are not defined at this level
-\RequirePackage{moderncviconstikz}
+\RequirePackage{./hadi-style/moderncviconstikz}
 
 \endinput
 
