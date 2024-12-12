@@ -81,6 +81,8 @@
         \collectionloop{phones}{% the key holds the phone type (=symbol command prefix), the item holds the number
           \makenewline\csname\collectionloopkey phonesymbol\endcsname~\collectionloopitem}%
         %
+        {\makenewline~}
+        %
         \collectionloop{socials}{% the key holds the social type (=symbol command prefix), the item holds the link
           \makenewline\csname\collectionloopkey socialsymbol\endcsname~\collectionloopitem}%
         %

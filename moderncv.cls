@@ -294,7 +294,7 @@
 \NewDocumentCommand{\social}{O{}O{}m}{%
   \ifthenelse{\equal{#2}{}}%
     {%
-      \ifthenelse{\equal{#1}{linkedin}}     {\collectionadd[linkedin]{socials}     {\protect\httpslink[#3]{www.linkedin.com/in/#3}}}               {}%
+      \ifthenelse{\equal{#1}{linkedin}}     {\collectionadd[linkedin]{socials}     {\protect\httpslink[Hadi@LinkedIn]{www.linkedin.com/in/#3}}}               {}%
       \ifthenelse{\equal{#1}{xing}}         {\collectionadd[xing]{socials}         {\protect\httpslink[#3]{www.xing.com/profile/#3}}}              {}%
       \ifthenelse{\equal{#1}{twitter}}      {\collectionadd[twitter]{socials}      {\protect\httpslink[#3]{twitter.com/#3}}}                       {}%
       \ifthenelse{\equal{#1}{mastodon}}     {\collectionadd[mastodon]{socials}     {\protect\httpslink[#3]{#3}}}                                   {}%
@@ -310,7 +310,7 @@
       \ifthenelse{\equal{#1}{whatsapp}}     {\collectionadd[whatsapp]{socials}     {\protect\httpslink[#3]{wa.me/#3}}}                             {}%
       \ifthenelse{\equal{#1}{signal}}       {\collectionadd[signal]{socials}       {#3}}                                                           {}%
       \ifthenelse{\equal{#1}{matrix}}       {\collectionadd[matrix]{socials}       {\httpslink[#3]{matrix.to/\#/#3}}}                              {}%
-      \ifthenelse{\equal{#1}{googlescholar}}{\collectionadd[googlescholar]{socials}{\protect\httpslink[#3]{scholar.google.com/citations?user=#3}}} {}%
+      \ifthenelse{\equal{#1}{googlescholar}}{\collectionadd[googlescholar]{socials}{\protect\httpslink[Hadi@Scholar]{scholar.google.com/citations?user=#3}}} {}%
       \ifthenelse{\equal{#1}{codeberg}}     {\collectionadd[codeberg]{socials}     {\protect\httpslink[#3]{codeberg.org/#3}}}                      {}%
       \ifthenelse{\equal{#1}{discord}}      {\collectionadd[discord]{socials}      {#3}}                                                           {}%
       \ifthenelse{\equal{#1}{twitch}}       {\collectionadd[twitch]{socials}       {\protect\httpslink[#3]{twitch.tv/#3}}}                         {}%
