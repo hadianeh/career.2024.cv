@@ -72,10 +72,15 @@
         {\makenewline}
         %
         \addressfont\color{addresscolor}%
+        %
         \ifthenelse{\isundefined{\@born}}{}{\makenewline\bornsymbol~\@born\makenewline~}%
         %
-        \ifthenelse{\isundefined{\@homepage}}{}{\makenewline\homepagesymbol~%
-          \ifthenelse{\equal{\@homepageprotocol}{http}}{\httplink{\@homepage}}{\httpslink{\@homepage}}}%
+        \ifthenelse{\isundefined{\@homepage}}{}{\makenewline\homepagesymbol~{\url{\@homepage}}}%
+        %
+        % HADI: DEFAULT THAT OVERRUNS
+        % \ifthenelse{\isundefined{\@homepage}}{}{\makenewline\homepagesymbol~%
+        %  \ifthenelse{\equal{\@homepageprotocol}{http}}{\httplink{\@homepage}}{\httpslink{\@homepage}}}%
+        %
         \ifthenelse{\isundefined{\@email}}{}{\makenewline~\makenewline\emailsymbol~\emaillink{\@email}}%
         %        
         \collectionloop{phones}{% the key holds the phone type (=symbol command prefix), the item holds the number

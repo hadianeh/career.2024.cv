@@ -18,7 +18,7 @@
 
 % adjust the page margins
 %\usepackage[hmargin=0.5in,vmargin=10pt]{geometry}
-\usepackage[lmargin=0.4in,rmargin=0.6in,tmargin=0.5in,bmargin=0.5in]{geometry}
+\usepackage[lmargin=0.3in,rmargin=0.4in,tmargin=0.5in,bmargin=0.5in]{geometry}
 % the 'contemporary' style looks better with reduced margins; uncomment the line above for increased margin
 %\usepackage[scale=0.75]{geometry}
 
@@ -72,7 +72,7 @@
 \title{Professor and Halicioğlu Chair in Computer Architecture}                          
 \born{21 September 1980}
 
-\homepage{https://cseweb.uc-sd.edu/~hadi/}
+\homepage{https://cseweb.ucsd.edu/~hadi/}
 
 \email{hadi@ucsd.edu}
 \phone[mobile]{+1~(858)~717~4639}
@@ -145,22 +145,16 @@
 % bibliography with multiple entries
 %\usepackage{multibib}
 %\newcites{book,misc}{{Books},{Others}}
-%----------------------------------------------------------------------------------
-%            content
-%----------------------------------------------------------------------------------
+
+
+\usepackage{amsmath}
+
 \begin{document}
-%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
-%-----       resume       ---------------------------------------------------------
+
 \makecvtitle
 
-\section{Education}  % for 'contemporary' style use optional argument for displaying an icon, e.g. \section[\faGraduationCap]{Education}
-\cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}  % arguments 3 to 6 can be left empty
-\cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}
-
-\section{Master thesis}
-\cvitem{title}{\emph{Title}}
-\cvitem{supervisors}{Supervisors}
-\cvitem{description}{Short thesis abstract}
+\input{text/appointments.tex}
+\input{text/education.tex}
 
 \section{Experience}
 \subsection{Vocational}
